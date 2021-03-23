@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/1e8932ee32.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <div class="container"></div>
+
+    <div class="weather-app">
+
+    <form id="weatherapp-form">
+    <div class="search-city">
+    <div class="row">
+      
+      <div class="col-6">
+      <input type="search" 
+      placeholder="Enter a city" 
+      class="form-control"
+      id="city-input"
+      /> 
+      </div>
+
+      <div class="col-3">
+      <input type="submit" class="form-control btn btn-primary" value="Search">
+      </input>
+      </div>
+      
+      <div class="col-3">
+      <input type="submit" class="form-control btn btn-success" value="Current">
+      </input>
+      </div>
+
+    </div>  
+    </div>
+    </form>
+
+<br/>
+
+<div class="city">
+    LOS ANGELES
+  </div>
+  <p class="day-date-time">
+Sat 02/06 9:00 PM
+  </p>
+    <br/>
+
+    <div class="current-info">
+      <span id="weather-description">Clear</span> &nbsp;
+      <i class="fas fa-sun"></i> 
+      <span id="temp-now">20</span>° 
+      <br/>
+
+     <a href="#" id="celcius-link">°C </a>|<a href="###" id="fahrenheit-link">°F </a>   
+     <br />
+
+    </div>
+<br/>
+
+
+    <div class="row">
+      <div class="col-sm">02/07<br/>
+        Sun<br/>
+        <i class="fas fa-sun"></i><br/>
+        <strong>73°</strong> 48°
+      </div>
+
+      <div class="col-sm">02/08<br/>
+        Mon<br/>
+        <i class="fas fa-cloud-sun"></i><br/>
+        <strong>69°</strong> 51°
+    </div>
+
+      <div class="col-sm">02/09<br/>
+        Tue<br/>
+        <i class="fas fa-cloud-sun"></i><br/>
+        <strong>64°</strong> 50°
+    </div>
+
+      <div class="col-sm">02/10<br/>
+        Wed<br/>
+        <i class="fas fa-cloud-sun"></i><br/>
+        <strong>66°</strong> 50°
+    </div>
+
+      <div class="col-sm">02/11<br/>
+        Thu<br/>
+        <i class="fas fa-cloud-sun"></i><br/>
+        <strong>66°</strong> 52°
+      </div>
+ </div>
+
+ <script src="src/index.js"></script>
+  </body>
+</html>
